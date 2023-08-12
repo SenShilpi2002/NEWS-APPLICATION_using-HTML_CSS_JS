@@ -1,9 +1,67 @@
- @font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
- }
- *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
- }
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: 0;
+}
+
+:root{
+   
+   --primary-color: #183b56;
+   --secondary-color: #577592;
+   --accent-color: #2294ed;
+   --accent-color-dark: #1d69a3;
+  
+
+}
+
+body{
+   font-family: 'Nunito', sans-serif;
+   /* font-family: 'Caprasimo', cursive;  */
+   /* font-family: 'PT Serif', serif; */
+   color:var(--primary-color)
+}
+
+p{
+   font-family: "PT+Serif",sans-serif;
+   color: var(--secondary-color);
+   line-height: 14rem;
+}
+
+a{
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+.flex {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.container {
+   max-width: 1180px;
+   margin-inline: auto;
+   overflow: hidden;
+}
+
+nav{
+   background-color: azure;
+   box-shadow: 0 0 4px #234;
+   position: fixed;
+   z-index: 99; 
+   top: 0;
+   left: 0;
+   right: 0;
+
+} 
+
+.main-nav{
+   justify-content: space-between;
+   padding-block: 8px;
+}
+.company-logo img{
+   width: 200px;
+}
