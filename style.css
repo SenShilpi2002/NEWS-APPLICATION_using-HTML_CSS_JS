@@ -39,6 +39,8 @@ ul {
    display: flex;
    align-items: center;
    justify-content: space-evenly;
+   flex-direction: row;
+   /* float: left; */
 }
 
 .container {
@@ -50,6 +52,7 @@ ul {
 nav{
    background-color: azure;
    box-shadow: 0 0 4px #234;
+   flex-direction: row;
    position: fixed;
    z-index: 99; 
    top: 0;
@@ -60,8 +63,37 @@ nav{
 
 .main-nav{
    justify-content: space-between;
-   padding-block: 8px;
+   padding-block: 3px;
+   margin: 12px;
 }
 .company-logo img{
    width: 200px;
+   /* float: left; */
+}
+
+.hover-link:hover {
+   cursor: pointer;
+   color: var(--secondary-color);
+}
+.hover-link:active {
+   color: crimson;
+}
+.nav-links ul {
+   flex-direction: row;
+}
+
+.search-bar{
+   height: 34px;
+   gap: 8px;
+   border-radius: 10px;
+}
+
+.news-input{
+   width: 200px;
+   height: 8px;
+   border-color: firebrick;
+   padding: 5px;
+   margin: 2px;
+   border-radius: 4px;
+   padding-block: 4px;
 }
